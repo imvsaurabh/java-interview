@@ -23,7 +23,6 @@ public class ProfessionPrototype {
     }
 
     public static Profession getProfessionObject(ProfessionEnum professionEnum) {
-        Profession profession = PROFESSION_MAP.get(professionEnum);
-        return profession.clone();
+        return PROFESSION_MAP.get(professionEnum).clone();
     }
 }
